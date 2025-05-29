@@ -10,6 +10,7 @@ export default function Sign() {
   const [pass, setPass] = useState("");
   const navigate = useNavigate();
   const handleSignIn = async () => {
+    console.log("HLo1");
     if (!firstname || !lastname || !email || !pass) {
       toast.error("Please fill all the credentials.");
       return;
@@ -28,15 +29,17 @@ export default function Sign() {
           password: pass,
         }),
       });
-      const data = response.json();
+      const data = await response.json();
+      console.log("HLo");
       if (response.ok) {
-        console.log(data.token);
         navigate("/login");
       } else {
+        console.log("HLo2");
         console.error("Error:", data);
         toast.error(data.error || "An error occurred");
       }
     } catch (error) {
+      console.log("HLo3");
       console.error("Error fetching profile data:", error);
       toast.error("An error occurred while Sign in. Please try again.");
     }
