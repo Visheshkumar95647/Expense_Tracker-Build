@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: orange;
+    justify-content: space-between;
+    align-items: center;    
+}
+h2{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    color: black
+}
+.nav-right{
+  display: flex;
+  gap: 10px;
+  padding-right: 30px;
+
+}
+.nav-right button{
+  border: none;
+  border-radius: 5px;
+  font-family:'Courier New', Courier, monospace;
+  cursor: pointer;
+  height: 30px;
+}

@@ -1,0 +1,191 @@
+
+.img img{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+.main-div-expense{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.expenses-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Dynamically fill available space */
+  width: 100vw;
+  gap: 20px; /* Add space between grid items */
+  padding: 20px; /* Optional: Add some padding around the grid */
+}
+
+.expense-item {
+  display: flex;
+  flex-direction: column;
+  gap:20px; 
+  align-items: flex-start;
+  box-shadow: 1px 1px 20px 5px rgb(0, 0, 0);
+  padding: 10px; /* Optional: Add some padding inside each item */
+  background-image:radial-gradient( rgb(91, 86, 86) , black);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;/* Full width of the grid item */
+  height: 300px; /* Set height for each item */
+  border-radius: 10px;
+}
+.expense-item .delete-updates{
+  display: flex;
+  width: max-content;
+  height: 40px;
+  align-items: center;
+  gap: 5px;
+}
+.delete-updates button{
+  height: 30px;
+  border:none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.delete button{
+  background-color: rgb(208, 40, 40);
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.updates button{
+  background-color: orange;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.expense-item .content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  height: 240px;
+}
+.box{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.heading{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 0);
+  font-weight: 900;
+}
+.ans{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+}
+/* Filter */
+
+.filter{
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px orange;
+  background-image:radial-gradient( rgb(91, 86, 86) , black);
+  padding-right: 20px;
+}
+.filter .category {
+  height: max-content;
+  min-height: 100px;
+  width: 320px;
+  overflow-y: scroll;
+  max-height:200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: start; 
+  gap: 10px;
+}
+
+.category input{
+  width: 15px;
+}
+.checkbox{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left-side-filter{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.left-side-filter input{
+  width: 200px;
+  margin: 5px;
+  background-color:rgb(63, 60, 60);
+  border-bottom: 1px solid black;
+}
+.btn{
+  display: flex;
+  width: 200px;
+  gap: 10px;
+}
+.btn button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination button {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  font-family:'Times New Roman', Times, serif;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+@media (min-width: 1000px) {
+  .expenses-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* Two columns layout for smaller screens */
+  }
+}
+@media (max-width: 1000px) {
+  .expenses-list {
+      grid-template-columns: 1fr 1fr 1fr; /* Two columns layout for smaller screens */
+  }
+}
+@media (max-width: 900px) {
+  .filter{
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px; /* Two columns layout for smaller screens */
+  }
+}
+@media (max-width: 640px) {
+  .expenses-list {
+      grid-template-columns: 1fr 1fr; /* Two columns layout for smaller screens */
+  }
+  .left-side-filter{
+    padding-left: 45px;
+  }
+  .filter{
+    width: 310px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .expenses-list {
+      grid-template-columns: 1fr; /* Four columns layout for larger screens */
+  }
+}
+@media (max-width: 450px) {
+  .form{
+     scale: 0.9;
+  }
+}

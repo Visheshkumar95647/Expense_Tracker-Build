@@ -1,0 +1,79 @@
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 166, 0);
+}
+.pie-chart{
+    overflow-y: hidden;
+}
+.temp-data{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.temp-data .img  img{
+    width: 300px;
+    height: 300px;
+}
+.input-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input-date button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border: none;
+}
+.input-date input{
+    background-color: white;
+    color: black;
+    width: 300px;
+}
+.input-date input::placeholder{
+    color: black;
+}
+/* Bar-Graph */
+.bar{
+    overflow-y: hidden;
+}
+.year-input input{
+    background-color: white;
+    color: black;
+    width: 300px;
+}
+.enter-year{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.enter-year button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border: none;
+    margin-left: 40px;
+}
+@media (max-width : 850px){
+    .enter-year{
+        scale: 1.5;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width : 550px){
+    .enter-year{
+        scale: 1.8;
+        padding-bottom: 20px;
+    }
+}

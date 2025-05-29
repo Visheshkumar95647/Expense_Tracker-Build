@@ -1,0 +1,32 @@
+.footer {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.foot {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.img img {
+  object-fit: contain; 
+}
+
+h1 {
+  color: black;
+}
+
+.foot h2 {
+  color: maroon;
+  font-family: "Courier New", Courier, monospace;
+}

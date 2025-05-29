@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.form{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px 5px orange;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-image:radial-gradient( rgb(151, 147, 147) , rgb(0, 0, 0));
+}
+.sign{   
+    height: 500px;
+}
+.img img{
+    width: 50px;
+    height: 50px;
+}
+input {
+  width: 250px;
+  height: 35px;
+  border: none;
+  padding: 15px;
+  border-left: 5px solid orange;
+  background-color: rgba(0, 0, 0, 0.256);
+  border-radius: 5px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: rgb(75, 66, 66);
+  outline: none;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn{
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-1{
+    background-color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+#btn-2{
+    background-color: black;
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+}
